@@ -1,0 +1,11 @@
+,Initial value,Lower bound,Upper bound,Fixed
+Ri,9.73,8.33,11.13,False
+thick,1.57,1.17,1.97,False
+omega,1.031,0.7824,1.8156,False
+L0,1.0,1.0,1.0,True
+lambdaZ,1.47,1.33,1.61,False
+mu_0,10.0,2.0,18.0,False
+k1_1,40.0,0.0,136.0,False
+k2_1,10.1,0.0,27.23,False
+k3_1,0.112,0.0,0.333,False
+phi,71.6,50.1,90.0,False
