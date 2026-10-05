@@ -3,10 +3,10 @@ from gmmtools import *
 import pickle
 from StressTransform import *
 
-with open("gmm_stress.pkl", "rb") as f:
+with open("../fitted-models/gmm_stress.pkl", "rb") as f:
     gmm_stress = pickle.load(f)
     
-with open("stress_transform.pkl", "rb") as f:
+with open("./fitted-models/stress_transform.pkl", "rb") as f:
     stress_transform = pickle.load(f)
     
 results = {}

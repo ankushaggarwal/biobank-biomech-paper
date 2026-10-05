@@ -2,10 +2,10 @@ import pandas as pd
 from gmmtools import * 
 import pickle
 
-with open("gmm_asc_mal.pkl", "rb") as f:
+with open("../fitted-models/gmm_asc_mal.pkl", "rb") as f:
     gmm_mal = pickle.load(f)
 
-with open("gmm_asc_fem.pkl", "rb") as f:
+with open("../fitted-models/gmm_asc_fem.pkl", "rb") as f:
     gmm_fem = pickle.load(f)
 
 gmm_mal.verbose = False
@@ -26,10 +26,10 @@ x2 = CMI_gmms_MC([gmm_mal,gmm_fem],['Asc_Dist'],['Age','Bod_Sur'],
 print("Ascending: CMI between male/female Asc_Dist (given age and BSA) is:")
 print(x1,x2)
 
-with open("gmm_dsc_mal.pkl", "rb") as f:
+with open("../fitted-models/gmm_dsc_mal.pkl", "rb") as f:
     gmm_mal = pickle.load(f)
 
-with open("gmm_dsc_fem.pkl", "rb") as f:
+with open("../fitted-models/gmm_dsc_fem.pkl", "rb") as f:
     gmm_fem = pickle.load(f)
 
 gmm_mal.verbose = False

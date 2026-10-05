@@ -102,10 +102,10 @@ def plot_settings(fname):
     plt.savefig(fname, bbox_inches='tight')
     plt.close()
 
-with open("gmm_stress.pkl", "rb") as f:
+with open("./fitted-models/gmm_stress.pkl", "rb") as f:
     gmm_stress = pickle.load(f)
     
-with open("stress_transform.pkl", "rb") as f:
+with open("./fitted-models/stress_transform.pkl", "rb") as f:
     stress_transform = pickle.load(f)
     
 gmm_stress.reduce(condition=['DBP','PP', 'Area', 'Dist'])

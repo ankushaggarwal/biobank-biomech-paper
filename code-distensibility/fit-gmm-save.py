@@ -26,9 +26,9 @@ gmm_fem = GMM_Custom(df_fem)
 gmm_mal.fit()
 gmm_fem.fit()
 
-with open("gmm_asc_mal.pkl", "wb") as f:
+with open("../fitted-models/gmm_asc_mal.pkl", "wb") as f:
     pickle.dump(gmm_mal, f)
-with open("gmm_asc_fem.pkl", "wb") as f:
+with open("../fitted-models/gmm_asc_fem.pkl", "wb") as f:
     pickle.dump(gmm_fem, f)
 
 dict1 = {'Sex': 'Sex',
@@ -53,7 +53,7 @@ gmm_fem = GMM_Custom(df_fem)
 gmm_mal.fit()
 gmm_fem.fit()
 
-with open("gmm_dsc_mal.pkl", "wb") as f:
+with open("../fitted-models/gmm_dsc_mal.pkl", "wb") as f:
     pickle.dump(gmm_mal, f)
-with open("gmm_dsc_fem.pkl", "wb") as f:
+with open("../fitted-models/gmm_dsc_fem.pkl", "wb") as f:
     pickle.dump(gmm_fem, f)

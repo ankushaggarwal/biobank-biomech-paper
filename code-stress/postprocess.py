@@ -56,7 +56,7 @@ gmm_stress = GMM_Custom(df1)
 gmm_stress.fit()
 gmm_stress.reduce(condition=['DBP','SBP', 'Area', 'Dist'])
 
-with open("gmm_stress.pkl", "wb") as f:
+with open("./fitted-models/gmm_stress.pkl", "wb") as f:
     pickle.dump(gmm_stress, f)
-with open("stress_transform.pkl","wb") as f:
+with open("./fitted-models/stress_transform.pkl","wb") as f:
     pickle.dump(stress_transform,f)

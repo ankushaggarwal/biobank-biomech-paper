@@ -36,7 +36,7 @@ gmm2 = GMM_Custom(df2)
 gmm2.fit()
 gmm2.data = None
 
-with open("gmm_asc.pkl", "wb") as f:
+with open("../fitted-models/gmm_asc.pkl", "wb") as f:
     pickle.dump(gmm, f)
-with open("gmm_dsc.pkl", "wb") as f:
+with open("../fitted-models/gmm_dsc.pkl", "wb") as f:
     pickle.dump(gmm2, f)

@@ -6,13 +6,13 @@ from matplotlib import pyplot as plt
 from gmmtools import *
 
 #load the created gmm's
-with open("../create-gmms/gmm_asc_mal.pkl", "rb") as f:
+with open("../fitted-models/gmm_asc_mal.pkl", "rb") as f:
     mal_asc_gmm = pickle.load(f)
-with open("../create-gmms/gmm_asc_fem.pkl", "rb") as f:
+with open("../fitted-models/gmm_asc_fem.pkl", "rb") as f:
     fem_asc_gmm = pickle.load(f)
-with open("../create-gmms/gmm_dsc_mal.pkl", "rb") as f:
+with open("../fitted-models/gmm_dsc_mal.pkl", "rb") as f:
     mal_dsc_gmm = pickle.load(f)
-with open("../create-gmms/gmm_dsc_fem.pkl", "rb") as f:
+with open("../fitted-models/gmm_dsc_fem.pkl", "rb") as f:
     fem_dsc_gmm = pickle.load(f)
 
 gmms = [fem_asc_gmm, mal_asc_gmm, fem_dsc_gmm, mal_dsc_gmm]

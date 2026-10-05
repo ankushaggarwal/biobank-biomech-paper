@@ -101,7 +101,7 @@ if __name__ ==  '__main__':
     #prop_samples = rv.rvs(nsamples) #diastolic radius and distensibility
     
     ######### Use GMM fitted to biobank data #############
-    with open("../ukbb-work/instance-2-ao/create-gmms/gmm_asc.pkl", "rb") as f:
+    with open("../fitted-models/gmm_asc.pkl", "rb") as f:
         gmm = pickle.load(f)
     
     prop_samples = gmm.samples(nsamples, condition=False)
@@ -161,7 +161,7 @@ if __name__ ==  '__main__':
     
     gmm_stress.reduce(condition=['DBP','PP', 'Area', 'Dist'])
     
-    with open("gmm_stress.pkl", "wb") as f:
+    with open("../fitted-models/gmm_stress.pkl", "wb") as f:
         pickle.dump(gmm_stress, f)
-    with open("stress_transform.pkl","wb") as f:
+    with open("../fitted-models/stress_transform.pkl","wb") as f:
         pickle.dump(stress_transform,f)

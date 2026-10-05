@@ -15,10 +15,10 @@ mpl.rcParams.update({
 })
 
 #load the created gmm's
-with open("gmm_stress.pkl", "rb") as f:
+with open("./fitted-models/gmm_stress.pkl", "rb") as f:
     gmm_stress = pickle.load(f)
     
-with open("stress_transform.pkl", "rb") as f:
+with open("./fitted-models/stress_transform.pkl", "rb") as f:
     stress_transform = pickle.load(f)
     
 gmm_stress.reduce(condition=['DBP','SBP', 'Area', 'Dist'])
